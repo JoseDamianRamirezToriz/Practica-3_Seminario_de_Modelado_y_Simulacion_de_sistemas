@@ -6,9 +6,8 @@ function dx = MovTraslacional(t, x)
     k1 = 16182;       % Elasticidad de la suspencion (N/m)
     f = 0;            % Fuerza aplicada (N)
     k2 = 19000;       % Elasticidad de la llanta (N/m)
-    z1 = 0.05*sin(0.5*pi*t);         % z1 desplazamiento vertical(m)
-    z2 = 0.05*sin(20*pi*t);         % z2 desplazamiento vertical(m)
-    z = z1;
+    z = 0.05*sin(0.5*pi*t);         % z1 desplazamiento vertical(m)
+    %z2 = 0.05*sin(20*pi*t);         % z2 desplazamiento vertical(m)
 
     %---Estados del sistema---%
     dx = zeros(4, 1);
