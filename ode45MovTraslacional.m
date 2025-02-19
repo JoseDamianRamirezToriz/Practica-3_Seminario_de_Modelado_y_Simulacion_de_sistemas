@@ -8,14 +8,13 @@ tspan = [0,  10]; % De 0 a 10 segundos
 [t, x] = ode45(@MovTraslacional, tspan, x0);
 
 figure(1)
-subplot(2,1,1);
 plot(t,x(:,1),'b','LineWidth',1.75);
 grid on
 title("Posición de masa 1");
 xlabel("Tiempo");
 ylabel("Posición");
-
-subplot(2,1,2);
+%Figura 2
+figure(2)
 plot(t,x(:,2),'r','LineWidth',1.75);
 grid on
 title("Posición de masa 2");
